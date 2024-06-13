@@ -1,0 +1,42 @@
+1.2.1 Suppose that a and b are integers.
+What does the following sequences of statements do?
+t = a 
+b = t 
+a = b
+
+|Statement|a|b|t|
+|---------|-|-|-|
+|(initial)|2|4|-|
+|t = a    |2|4|2|
+|b = t    |2|2|2|
+|a = b    |2|2|2|
+
+This sequence of statements attempts to switch
+the values of A and B but in fact assigns the
+value of a to both a and b.
+
+1.2.3 Suppose that a and b are booleans. Show that the expression
+
+(not (a and b) and (a or b)) or ((a and b) or not (a or b))
+
+Evaluates to true.
+
+Truth table:
+
+|  a  |  b  |  a and b  |  a or b  |  not (a and b)  |  (not (a and b) and (a or b))  |  (a and b) or not (a or b)  |  Final Expression  |
+|:---:|:---:|:---------:|:--------:|:---------------:|:------------------------------:|:--------------------------:|:------------------:|
+|  T  |  T  |     T     |    T     |        F        |               F                |             T              |          T         |
+|  T  |  F  |     F     |    T     |        T        |               T                |             F              |          T         |
+|  F  |  T  |     F     |    T     |        T        |               T                |             T              |          T         |
+|  F  |  F  |     F     |    F     |        T        |               F                |             T              |          T         |
+
+1.2.4: Suppose a and b are integers. Simplify the following expression:
+
+(not (a < b) and not(a > b))
+
+Answer:
+a == b
+
+1.2.5. What does each of these statements write? Explain each outcome.
+
+stdio.writeln(2+3)  ==> 5 because it interprets

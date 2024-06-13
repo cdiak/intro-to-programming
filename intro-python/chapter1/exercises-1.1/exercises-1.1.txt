@@ -1,0 +1,82 @@
+1.1.2 Describe what happens if you omit the following in helloworld.py:
+    a. import
+    Two problems:
+            "stdio" is not defined Pylance(reportUndefinedVariable) [Ln 1, Col 1]
+            "stdio" is not defined Pylance(reportUndefinedVariable) [Ln 3, Col 1]
+    Running we get this error:
+            Traceback (most recent call last):
+              File "/Users/cdiak/Downloads/introcs-1.0/chapter1/helloworld.py", line 1, in <module>
+                stdio
+            NameError: name 'stdio' is not defined
+    b. stdio
+    Two problems:
+            "Expected module name Pylance [Ln 1 Col 8]
+            "Expected expression Pylance [Ln 3 Col 1]
+    Running we get:
+          File "/Users/cdiak/Downloads/introcs-1.0/chapter1/helloworld.py", line 1
+    import 
+           ^
+SyntaxError: invalid syntax
+    c. import stdio
+        One problem: "stdio" is not defined Pylance (reportUndefinedVariable) [Ln 1, Col 1]
+        Running we get:
+         File "/Users/cdiak/Downloads/introcs-1.0/chapter1/helloworld.py", line 1, in <module>
+    stdio.writeln("Hello, world!")
+    ^^^^^
+NameError: name 'stdio' is not defined
+
+1.1.3 Describe what happens if you misspell (by, say, omitting the second letter) the following in helloworld.py:
+
+a. import
+    Problems: 
+        Statements must be separated by newlines or semicolons.
+        iport is not defined [Ln 1, Col 1]
+        stdio is not defined [Ln 1, Col 7] and [Ln 3, Col 1] 
+    Runtime:
+        SyntaxError on stdio
+
+b. stdio
+    Problems:
+        Import "sdio" could not be resolved Pylance (reportMissingImports)
+    Runtime:
+        ModuleNotFoundError: No module named 'sdio'
+c. write
+    No detected problems in VS Code
+    Runtime:
+        AttributeError: module 'stdio' has no attribute 'witeln'. Did you mean: 'writeln'?
+d. writeln
+    Same here, no detected problem.
+    Runtime:
+        AttributeError: module 'stdio' has no attribute 'wite'. Did you mean: 'write'?
+
+1.1.4 Describe what happens if you omit the following in helloworld.py:
+a. the first '
+    Problems:
+        1. "(" was not closed
+        2. "Hello" is not defined
+        3. "World" is not defined
+    Runtime:
+        SyntaxError: unterminated string literal (detected at line 3)
+b. the second '
+    Problems:
+        1. "(" was not closed
+        2. String literal is unterminated
+    Runtime:
+        SyntaxError: unterminated string literal (detected at line 3)
+c. the stdio.writeln() statement
+    Program runs, but there is no output. It simply imports stdio.
+
+1.1.5 Describe what happens if you try to execute useargument.py with each of the following command lines:
+
+python useargument.py python
+    Hi, python. How are you?
+python useargument.py @!&^%
+    zsh: event not found: &
+python useargument.py 1234
+    Hi, 1234. How are you?
+python useargument Bob
+    python: can't open file '/Users/.../useargument': [Errno 2] No such file or directory
+useargument.py Bob
+    zsh: command not found: useargument.py
+python useargument.py Alice Bob
+    Hi, Alice. How are you?
