@@ -42,3 +42,30 @@ Quadratic finds the roots of the expression ax^2 + bx + c = 0 for a = 1.
 If b = 0 that means x^2 + c = 0. This means that we can find the square root of 
 c by choosing c' such that x^2 + (c'*-1) = 0, meaning x^2 = c'. Given that square
 roots can only be positive, we take the positive valued output as the root.
+
+1.2.13 Give the value of a after the execution of each of the following sequences:
+a = 1       a = True    a = 2
+a = a + a   a = not a   a = a*a 
+a = a + a   a = not a   a = a*a 
+a = a + a   a = not a   a = a*a 
+Result: 6   False       256 
+
+1.2.14 A physics student gets unexpected results when using the code:
+
+force = G * mass1 * mass2 / radius * radius
+
+to compute the values according to the formula F = Gm1m2/r^2
+
+Explain the problem and correct the code.
+
+Answer: Multiplication and division have the same precedence, and hence
+are left associative in Python. Thus, parentheses are needed to correct
+the code:
+
+force = (G * mass1 * mass2) / (radius * radius)
+
+1.2.15 Suppose that x and y are two floats that represent the Cartesian
+coordinates of a point (x, y) in the plane. Given an expression that
+evaluates to the distance of the point from the origin:
+
+math.sqrt(x*x + y*y)
