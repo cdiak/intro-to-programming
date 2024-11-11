@@ -1,0 +1,9 @@
+# 09_Scientific_Computation
+- [[9.1_Floating_Point]]
+- [[9.2_Symbolic_Methods]]
+- [[9.3_Numerical_Integration]]
+- [[9.4_Differential_Equations]]
+- [[9.5_Linear_Algebra]]
+- [[9.6_Optimization]]
+- [[9.7_Data_Analysis]]
+- [[9.8_Simulation]]
