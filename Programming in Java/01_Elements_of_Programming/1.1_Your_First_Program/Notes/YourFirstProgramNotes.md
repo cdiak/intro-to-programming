@@ -1,0 +1,1 @@
+Some thoughts on my third time starting this book over. It does feel more intuitive this time, and I'm enjoying supplementing this with other lectures and things that I'm finding online. It's humbling working on these programs and realizing just how much about computers and computation that I don't know.

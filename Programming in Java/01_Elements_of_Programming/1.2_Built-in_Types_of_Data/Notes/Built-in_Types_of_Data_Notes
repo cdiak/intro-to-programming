@@ -1,0 +1,99 @@
+A data type is a set of values and a set of operations on those values.
+
+This has me thinking about perception and whether the human mind possesses a priori data types or whether they are constructed on the fly, or something in between. I find it implausible to think that, on the one hand, all of the data types would be definable simply in virtue of our physical structure (because there are abstract data types we could encounter as we develop mathematics) but on the other hand, the idea of purely flexible, piecemeal datatype construction doesn't make sense either. I know this is a little far afield, but putting the thought to paper here.
+
+Human data types may also have infinitely many values or operations in a way that computer data types do not.
+
+There are eight primitive types of data in Java, mostly for different kinds of numbers:
+
+byte, short, int, long, float, double, char, boolean
+
+Some terminology to keep in mind:
+1. declaration statements which declare the names of variables using identifiers
+2. assignment statements change the values of the variables by associating a data-type value with the variable
+3. expressions are combinations of literals, variables, and operations that java evaluates to produce a value
+4. literals are representations of data-type values (because a computer is a representer)
+5. operators are java representations of data-type operations
+6. Identifiers are representations of names for variables, etc.
+7. Variables are entities that hold a data-type value which we can refer to by name
+8. Constant variables are those whose values don't change during the execution of a program (e.g. SPEED_OF_LIGHT)
+9. operator precedence -- left associativity, pemdas, etc. Code rarely depends on this.
+10. inline initialization: declare and assign variables to initial value at the same time.
+
+Tracing changes in variable values. I understand the trace table.
+
+Type Safety
+
+We don't want operations that mix up types because units of types can be incommensurate
+
+char type represents individual alphanumeric characters or symbols, encoded as 16-bit integers using Unicode encoding scheme
+
+string data type is NOT a primitive type in Java
+
+Concatenation (+) operator takes two String operands and produces a third string formed by appending the characters of the second to the characters of the first operand
+
+Java automatically converts operands to strings if used with a + operator and a String
+
+String a = "1234";
+String b = "99";
+String c = a + b;
+
+Result: 123499
+
+String a = "1234";
+int b = "99";
+String c = a + b;
+
+Result: 123499
+
+SO:
+
+System.out.println(a + " + " + b + " = " + c);
+
+Result: 1234 + 99 = 1333
+
+Use Java library methods Integer.parseInt() and Double.parseDouble() to convert strings in the command-line to numeric values for primitive data types.
+
+Integers
+
+int type represents integers between -2^31 and 2^31 - 1 because they are represented with 32 binary digits;
+
+Floating-point numbers
+
+Java, and all languages, have rules around NaN, Infinity, etc. which are design choices.
+
+We'll use the double type, not floats.
+
+Infinity if calculation is too large, NaN if undefined.
+
+Booleans
+
+&& is and
+|| is or
+! is not
+
+Comparisons
+
+Mixed-type operators take operands of one type (like ints) and produce a result of another type (like Booleans)
+
+Comparison operations have lower precedence than arithmetic operations and higher precedence than Boolean operators.
+
+Library methods and APIs
+
+In an API, each method is described by a line in the API that teaches you have to use the method. The method's signature is not what you use to use the method.
+
+double sqrt(double a)
+ ^      ^     ^
+ |      |     |
+ |      |    argument type
+ |    method name
+return type
+
+API table structure:
+
+method call | library | return type | value
+
+In APIs, we use a verb phrase to describe the behavior of a method that produces side effects; otherwise we use a noun phrase to describe the return value. 
+
+Sidenote: "Void" keyword designates a method that does not return a value, and whose main purpose is to produce side effects.
+
