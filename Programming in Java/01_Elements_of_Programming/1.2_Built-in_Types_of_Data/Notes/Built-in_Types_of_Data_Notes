@@ -97,3 +97,26 @@ In APIs, we use a verb phrase to describe the behavior of a method that produces
 
 Sidenote: "Void" keyword designates a method that does not return a value, and whose main purpose is to produce side effects.
 
+Type Conversion
+
+Implicit Type Conversion
+
+When there is no loss of information, it is appropriate to use automatic promotion or coercion (two terms for implicit type conversion). For example, assigning an int value to a double. However, when you try to assign a double value to an int, you'll get a compile time error because there is more information in the double than the int.
+
+Explicit Cast
+
+For built-in data types, you have type conversion conventions that can make conversion explicit. You cast an expression from (e.g. double to int) by prepending (int) in parentheses. 
+
+There are design choices in Java that need to be learned, like how double --> int casting discards the fractional part and rounds toward 0.
+
+Casting has higher precedence than arithmetic.
+
+Explicit type conversion
+
+Integer.parseInt() and Double.parseDouble() methods convert String values to int and double values. Math.round() takes a double and returns a long: nearest integer to argument.
+
+Summary
+
+A datatype is a set of values and a set of operations on those values. Java has 8 primitive types: boolean, char, byte, short, int, long, float, and double.
+
+Strings are not primitive in Java, but Java has some built-in facilities for them.
