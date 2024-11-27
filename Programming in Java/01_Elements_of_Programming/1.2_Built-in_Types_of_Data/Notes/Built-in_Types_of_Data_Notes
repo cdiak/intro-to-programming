@@ -120,3 +120,200 @@ Summary
 A datatype is a set of values and a set of operations on those values. Java has 8 primitive types: boolean, char, byte, short, int, long, float, and double.
 
 Strings are not primitive in Java, but Java has some built-in facilities for them.
+
+Q&A Section
+
+Strings 
+
+Remember Unicode has more than 100k different characters.
+< > are defined only for primitive types.
+You can't specify string literals that are too long to fit on a single line.
+
+Integers
+
+You're going to want to learn about two's complement representation.
+
+Overflow occurs when a calculation produces a result that exceeds the range that can be represented by the fixed number of bits allocated for a data type (e.g., int). In Java, an int is a 32-bit signed integer, which means it can represent values from -2^{31} to 2^{31} - 1.
+
+
+The maximum value of a Java int is 2,147,483,647 (2^{31} - 1).
+	•	Adding 1 to this value results in -2,147,483,648 (the minimum value of an int), due to overflow.
+
+^ is bitwise exclusive or:
+
+Understanding the ^ Symbol in Java
+
+In Java, the ^ symbol is not for exponentiation; instead, it represents the bitwise exclusive OR (XOR) operator.
+
+What is Bitwise XOR (^)?
+
+Bitwise XOR is a logical operation performed between two integers at the binary level. It operates on each pair of corresponding bits in the binary representations of the numbers.
+
+The rules for XOR are:
+	•	If the bits are different, the result is 1.
+	•	If the bits are the same, the result is 0.
+
+Example:
+
+int a = 5;  // Binary: 0101
+int b = 3;  // Binary: 0011
+int result = a ^ b; // Result: 0110 (6 in decimal)
+
+System.out.println(result); // Outputs: 6
+
+Why is Bitwise XOR (^) in Java?
+
+Bitwise operations are essential for low-level programming tasks, such as:
+	1.	Efficient calculations: XOR can be used for mathematical tricks, like toggling bits or swapping values without a temporary variable.
+	2.	Cryptography: XOR is used in encryption algorithms.
+	3.	Data structures: XOR can be used in advanced data structures like XOR-linked lists.
+	4.	Error detection: XOR is employed in checksums and parity bit calculations.
+
+How to Exponentiate in Java?
+
+Java does not have a specific operator for exponentiation (like ** in Python or some other languages). Instead, you use methods from the Math class for this purpose.
+
+Common Methods for Exponentiation:
+
+	1.	Math.pow(base, exponent):
+This method raises base to the power of exponent. It works with double values.
+Example:
+
+double base = 2.0;
+double exponent = 3.0;
+double result = Math.pow(base, exponent); // 2^3 = 8
+
+System.out.println(result); // Outputs: 8.0
+
+
+	2.	Integer Powers:
+If you’re working with integers and need a simple integer result:
+	•	Use a loop for repeated multiplication.
+	•	Use a library like Apache Commons Math for more complex operations.
+Example using a loop:
+
+int base = 2;
+int exponent = 3;
+int result = 1;
+
+for (int i = 0; i < exponent; i++) {
+    result *= base; // Multiply base by itself exponent times
+}
+
+System.out.println(result); // Outputs: 8
+
+Summary:
+
+	1.	The ^ operator in Java is for bitwise XOR, not exponentiation.
+	2.	To perform exponentiation in Java, use Math.pow() for general cases or loops for integer powers.
+	3.	The absence of a dedicated exponentiation operator in Java reflects its design choice to keep the language simple and rely on library methods for mathematical operations.
+
+
+Floating Point
+
+Java uses IEEE 754 which has three components to a floating-point number:
+Sign, mantissa, and exponent.
+
+The mantissa is a part of a number, particularly in the context of logarithms or scientific notation. Its meaning depends on the specific context:
+
+1. In Scientific Notation
+
+	•	The mantissa refers to the decimal part of the number that is multiplied by a power of 10.
+	•	Example: In ￼, the mantissa is ￼.
+
+2. In Logarithms
+
+	•	When dealing with logarithms (usually base 10), a logarithm of a number can be expressed as the sum of:
+	•	An integer part called the characteristic (indicating the order of magnitude of the number).
+	•	A fractional part called the mantissa (indicating the precise position within that order of magnitude).
+	•	Example: For ￼:
+	•	The characteristic is ￼.
+	•	The mantissa is ￼.
+
+Additional Notes
+
+	•	In logarithms, the mantissa is always positive, even if the original logarithm is negative.
+	•	In floating-point representation, the term mantissa is often used synonymously with the significand, which is the part of a floating-point number that contains its significant digits. For example, in ￼, ￼ would be the significand or mantissa.
+
+WHY BE PRECISE
+
+0.1 + 0.1 == 0.2 is TRUE
+0.1 + 0.1 + 0.1 == 0.3 is FALSE
+
+Don't write code that's false, unless you meant to.
+
+Java has built in NaN and INFINITY constants.
+
+You have to build cosecant, secant, and cotangent using the Math.sin() and other functions.
+
+VARIABLES AND EXPRESSIONS
+
+Don't forget to declare variables. You'll get compile errors.
+
+ALWAYS CHECK THE FIRST ERROR FIRST. It may correct downstream errors.
+
+DIFFERENCE BETWEEN = AND ==
+
+= is the assignment operator
+== is a comparison operator
+
+To compare a double and int, you need to do a type conversion.
+
+Don't use chained assignments as a matter of style: a = b = c = 17
+Can't use chained comparisons because not supported: a < b < c
+
+Java's 'and' operator is &&. & is something different...
+
+In Java, the & symbol is the bitwise AND operator or the logical AND operator, depending on the context. Here’s a breakdown of its uses:
+
+        1. Bitwise AND Operator
+
+            •	Syntax: a & b
+            •	Performs a bitwise AND operation between two integers (or other primitive types that can be converted to integers, like char and byte).
+            •	It compares each bit of the two operands:
+            •	1 & 1 → 1
+            •	1 & 0 → 0
+            •	0 & 1 → 0
+            •	0 & 0 → 0
+            •	The result is an integer where each bit is 1 only if the corresponding bits of both operands are 1.
+
+        Example:
+
+        int a = 5;  // 5 in binary is 0101
+        int b = 3;  // 3 in binary is 0011
+        int result = a & b;  // result is 0101 & 0011 = 0001 (1 in decimal)
+        System.out.println(result);  // Output: 1
+
+        2. Logical AND Operator (Non-Short-Circuiting)
+
+            •	Syntax: a & b
+            •	Used with boolean values.
+            •	Evaluates both operands (unlike the short-circuit && operator, which stops evaluating if the first operand is false).
+            •	Returns true if both operands are true, otherwise false.
+
+        Example:
+
+        boolean a = true;
+        boolean b = false;
+        System.out.println(a & b);  // Output: false
+
+            •	Key Difference from &&: The & operator always evaluates both expressions, even if the first is false. This can be significant if the second expression has side effects.
+
+        Example:
+
+        boolean a = false;
+        boolean b = (5 / 0 > 1);  // This will throw an exception if evaluated
+
+        System.out.println(a && b);  // Output: false (no exception, short-circuits)
+        System.out.println(a & b);   // Throws an ArithmeticException (evaluates b)
+
+        Use Cases
+
+            1.	Bit Manipulation: Commonly used for low-level operations like masking bits or checking specific bit patterns.
+            2.	Boolean Logic: Use when you need to ensure both operands are evaluated, such as when relying on side effects of expressions.
+
+
+That's neither here nor there.
+
+Static typing means that the TYPE of EVERY VARIABLE and EXPRESSION is KNOWN at COMPILE TIME.
+
