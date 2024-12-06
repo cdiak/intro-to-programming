@@ -115,3 +115,25 @@ The two uses of “environment” share a metaphorical similarity: both involve 
 
 Understanding both will help you appreciate how abstractions at different levels of computing are named and conceptualized similarly!
 
+Left applicative order sidequest:
+
+Left applicative order, also called strict evaluation or call-by-value, is a strategy for evaluating expressions commonly used in programming and theoretical computation. Here’s a concise breakdown:
+	1.	Key Idea:
+	•	Evaluate all arguments of a function before applying the function itself.
+	2.	How It Works:
+	•	First, evaluate the expressions for all arguments to their final values.
+	•	Next, substitute those values into the function.
+	•	Finally, execute the function using the substituted values.
+	3.	Example:
+Suppose you have a function f(x) = x + 1 and an expression f(2 * 3).
+	•	In left applicative order, you first calculate 2 * 3, which equals 6.
+	•	Then you substitute 6 into f(x), resulting in 6 + 1.
+	•	The result is 7.
+	4.	Characteristics:
+	•	Arguments are evaluated only once, which can be efficient in most cases.
+	•	The order of evaluation is strict and predictable, making it easier to debug and reason about the program.
+	5.	Comparison with Other Evaluation Strategies:
+	•	Normal Order (Lazy Evaluation): Delays evaluating arguments until their values are absolutely needed.
+	•	Left Applicative Order: Always evaluates arguments immediately, even if some arguments are never used by the function.
+
+Left applicative order is widely used in practical programming languages like Python, Java, and C because it simplifies implementation and works well in most contexts. However, it can sometimes perform unnecessary computations if some arguments are never actually used by the function.
