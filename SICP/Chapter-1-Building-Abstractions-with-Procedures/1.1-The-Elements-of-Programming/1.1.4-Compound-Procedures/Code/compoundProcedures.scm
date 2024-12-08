@@ -13,3 +13,10 @@
 (define (sum-of-squares x y)
   (+ (square x)(square y)))
 
+(define (f a)
+  (sum-of-squares (+ a 1) (* a 2)))
+
+# Compound procedures are used in exactly the same way as primitive procedures. 
+# Indeed, one could not tell by looking at the definition of sum-of-squares 
+# given above whether square was built into the interpreter, like + and *, 
+# or defined as a compound procedure.
