@@ -11,3 +11,19 @@ Applicative v. Normal Order Evaluation
 - Normal order: fully expand the combinations, then reduce.
 - Applicative order: avoids multiple evaluations of the same expression
 
+Lisp Program
+├── Expression
+│   ├── Primitive Expression
+│   ├── Combination
+│   │   ├── Operator
+│   │   └── Operands
+│   └── Special Form
+│       ├── define
+│       ├── lambda
+│       ├── if
+│       ├── cond
+│       └── quote
+├── Process (created by evaluating expressions)
+└── Procedure (like a function)
+    ├── Primitive Procedures (built-in, like +, -, car, cdr)
+    └── Compound Procedures (user-defined, using lambda or define)
