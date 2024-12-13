@@ -49,3 +49,41 @@
 ; b
 ; 4
 
+> (cond ((= a 4) 6)
+        ((= b 4) (+ 6 7 a))
+        (else 25))
+
+;  (cond ((= a 4) 6) ((= b 4) (+ 6 7 a)) (else 25))
+;  (cond (#f 6) ((= b 4) (+ 6 7 a)) (else 25))
+;  (cond (#f 6) ((= 4 4) (+ 6 7 a)) (else 25))
+;  (cond (#f 6) (#t (+ 6 7 a)) (else 25))
+;  (cond (#f 6) (#t (+ 6 7 3)) (else 25))
+;  (cond (#f 6) (#t 16) (else 25))
+;16
+
+> (+ 2 (if (> b a) b a))
+6
+; (+ 2 (if (> 4 3) b a))
+; (+ 2 (if #t b a))
+; (+ 2 (if #t 4 a))
+; (+ 2 4)
+6
+
+> (* (cond ((> a b) a)
+           ((< a b) b)
+           (else -1))
+     (+ a 1))
+16
+
+(* (cond ((> a b) a) ((< a b) b) (else -1))(+ a 1))
+; (* (cond ((> a b) a) ((< a b) b) (else -1))(+ a 1))
+; (* (cond ((> 3 4) a) ((< a b) b) (else -1))(+ a 1))
+; (* (cond (#f a) ((< a b) b) (else -1))(+ a 1))
+; (* (cond (#f 3) ((< a b) b) (else -1))(+ a 1))
+; (* (cond (#f 3) ((< 3 4) b) (else -1))(+ a 1))
+; (* (cond (#f 3) (#t b) (else -1))(+ a 1))
+; (* (cond (#f 3) (#t 4) (else -1))(+ a 1))
+; (* 4 (+ a 1))
+; (* 4 (+ 3 1))
+; (* 4 4)
+16
