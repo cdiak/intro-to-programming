@@ -17,7 +17,7 @@
   ((and (> z x) (> y z)) x)  ; x is the middle, z is largest
   ((and (> x y) (> y z)) y)  ; y is the middle, x is largest
   ((and (> z y) (> y x)) y)  ; y is the middle, z is largest
-  (else z)))                 ; z is the middle(top-two 5 1 3)
+  (else z)))                 ; z is the middle
 
 (define a largest)
 (define b middle)
