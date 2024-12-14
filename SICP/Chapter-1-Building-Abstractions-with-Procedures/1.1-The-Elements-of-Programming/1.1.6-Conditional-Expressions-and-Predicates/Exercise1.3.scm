@@ -19,7 +19,4 @@
   ((and (> z y) (> y x)) y)  ; y is the middle, z is largest
   (else z)))                 ; z is the middle
 
-(define a largest)
-(define b middle)
-
 (define (top-two x y z) (sum-of-squares (largest x y z)(middle x y z)))
