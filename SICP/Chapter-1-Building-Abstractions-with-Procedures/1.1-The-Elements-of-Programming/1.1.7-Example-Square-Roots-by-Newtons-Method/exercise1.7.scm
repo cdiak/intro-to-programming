@@ -59,6 +59,7 @@
 
 (define (good-enough? guess x) 
   (< (abs (- (square guess) x)) (* x 0.0000001)))
+; Here I've changed the function to encode a dynamic tolerance that scales.
 
 (define (sqrt x)
   (sqrt-iter 1.0 x))
