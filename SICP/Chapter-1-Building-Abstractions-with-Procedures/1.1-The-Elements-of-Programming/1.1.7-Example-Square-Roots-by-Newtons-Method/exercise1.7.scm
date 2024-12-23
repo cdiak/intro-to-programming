@@ -67,4 +67,26 @@
 
 ; I originally wanted to define a tolerance variable, but this would mean changing
 ; around a number of functions to take three arguments instead of hard-coding a
-; dynamic tolerance into good-enough? which was easier.
+; dynamic tolerance into good-enough? which was easier. This doesn't do what the question
+; asks for, however. They want one that tracks relative changes.
+
+; Here is Sebastien Gignoux's solution:
+
+(define (square x) (* x x))
+
+(define (good-enough? previous-guess guess)
+  (< (abs (/ (- guess previous-guess) guess)) 0.00000000001))
+
+(define (sqrt-iter guess x)
+  (if (good-enough? guess (improve guess x))
+      guess
+      (sqrt-iter (improve guess x) x)))
+
+(define (improve guess x)
+  (average guess (/ x guess)))
+
+(define (average x y)
+  (/ (+ x y) 2))
+
+(define (sqrt x)
+  (sqrt-iter 1.0 x))
