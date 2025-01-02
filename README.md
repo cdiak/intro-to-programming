@@ -84,7 +84,7 @@ This repository showcases work in the following languages and tools:
 - Deepen understanding of algorithms, data structures, and functional programming.
 
 ### Long-Term
-- Expand the repository to include additional languages (e.g., C, JavaScript).
+- Expand the repository to include additional languages (e.g., C, OCaml).
 - Explore frameworks (e.g., Flask, Spring Boot).
 - Develop larger real-world projects demonstrating learned skills.
 
