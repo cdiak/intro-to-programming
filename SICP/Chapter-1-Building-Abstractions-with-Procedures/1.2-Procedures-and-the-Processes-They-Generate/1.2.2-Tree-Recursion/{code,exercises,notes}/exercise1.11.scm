@@ -25,3 +25,10 @@
 
 (define (helperfunction n)
   (+ (newfunction (- n 1)) (* 2 (newfunction (- n 2))) (* 3 (newfunction (- n 3)))))
+
+;; More elegant version that GPT-4o suggested:
+
+(define (f n)
+  (if (< n 3)
+      n
+      (+ (f (- n 1)) (* 2 (f (- n 2))) (* 3 (f (- n 3))))))
