@@ -26,4 +26,14 @@
 ; i = 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 
 ; ... will think about this more tomorrow.
 
-Let's try again.
+; Let's try again.
+
+(define (pascal n k)
+  (cond ((= n 0) 1)
+        ((= k 0) 1)
+        ((= n k) 1)
+        (else (+ (pascal (- n 1)(- k 1))
+                 (pascal (- n 1) k)))))
+
+; This time, I used both the row and column indices and some properties
+; of Pascal's Triangle to get a better code.
