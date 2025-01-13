@@ -32,6 +32,7 @@
   (cond ((= n 0) 1)
         ((= k 0) 1)
         ((= n k) 1)
+        ((> n k) 0)
         (else (+ (pascal (- n 1)(- k 1))
                  (pascal (- n 1) k)))))
 
