@@ -1,0 +1,687 @@
+.
+├── Programming Concepts
+│   ├── Advanced_Concepts
+│   │   ├── Abstraction_and_Organization
+│   │   │   ├── Abstraction.md
+│   │   │   ├── Encapsulation.md
+│   │   │   ├── Inheritance.md
+│   │   │   ├── Namespace.md
+│   │   │   ├── Polymorphism.md
+│   │   │   └── Scope.md
+│   │   ├── Deployment_and_Execution
+│   │   │   ├── API.md
+│   │   │   ├── CI_CD.md
+│   │   │   ├── Container.md
+│   │   │   ├── Microservices.md
+│   │   │   └── Virtual_Machine.md
+│   │   ├── Development_Tools
+│   │   │   ├── Build_Tool.md
+│   │   │   ├── Compiler.md
+│   │   │   ├── Debugger.md
+│   │   │   ├── IDE.md
+│   │   │   ├── Interpreter.md
+│   │   │   └── Version_Control.md
+│   │   └── Software_Engineering_Principles
+│   │       ├── DRY_Principle.md
+│   │       ├── KISS_Principle.md
+│   │       ├── SOLID_Principles.md
+│   │       └── YAGNI_Principle.md
+│   ├── Core_Concepts
+│   │   ├── Make_Decisions
+│   │   │   ├── Boolean.md
+│   │   │   ├── Comparison_Operator.md
+│   │   │   ├── If_Statement.md
+│   │   │   ├── Logical_Operator.md
+│   │   │   ├── Pattern_Matching.md
+│   │   │   └── Switch_Statement.md
+│   │   ├── Organize_Code_into_Manageable_Pieces
+│   │   │   ├── Class.md
+│   │   │   ├── Design_Pattern.md
+│   │   │   ├── Framework.md
+│   │   │   ├── Function.md
+│   │   │   ├── Library.md
+│   │   │   ├── Method.md
+│   │   │   ├── Module.md
+│   │   │   └── Package.md
+│   │   ├── Repeat_Things
+│   │   │   ├── Do_While_Loop.md
+│   │   │   ├── For_Loop.md
+│   │   │   ├── Infinite_Loop.md
+│   │   │   ├── Iteration.md
+│   │   │   ├── Recursion.md
+│   │   │   └── While_Loop.md
+│   │   └── Store_Data_and_Use_Later
+│   │       ├── Array.md
+│   │       ├── Data_Type.md
+│   │       ├── Database.md
+│   │       ├── File.md
+│   │       ├── Hash_Table.md
+│   │       ├── Memory.md
+│   │       ├── Object.md
+│   │       └── Variable.md
+│   ├── Low-Level_Concepts
+│   │   ├── Algorithms_and_Data_Structures
+│   │   │   ├── Algorithm.md
+│   │   │   ├── Big_O_Notation.md
+│   │   │   ├── Binary_Tree.md
+│   │   │   ├── Graph.md
+│   │   │   ├── Hashing.md
+│   │   │   ├── Linked_List.md
+│   │   │   ├── Queue.md
+│   │   │   └── Stack.md
+│   │   ├── Concurrency_and_Parallelism
+│   │   │   ├── Asynchronous_Programming.md
+│   │   │   ├── Deadlock.md
+│   │   │   ├── Process.md
+│   │   │   ├── Race_Condition.md
+│   │   │   └── Thread.md
+│   │   └── Memory_Management
+│   │       ├── Garbage_Collection.md
+│   │       ├── Heap.md
+│   │       ├── Pointer.md
+│   │       └── Stack_Memory.md
+│   ├── Machine_Learning_Concepts
+│   │   └── Perplexity.md
+│   └── Networking_and_Systems
+│       ├── Client_Server_Model.md
+│       ├── Firewall.md
+│       ├── HTTP_HTTPS.md
+│       ├── Load_Balancer.md
+│       ├── REST_API.md
+│       └── Sockets.md
+├── Programming in Java
+│   ├── 01_Elements_of_Programming
+│   │   ├── 01_Elements_of_Programming.md
+│   │   ├── 1.1_Your_First_Program
+│   │   │   ├── Code
+│   │   │   │   ├── HelloWorld.class
+│   │   │   │   ├── HelloWorld.java
+│   │   │   │   ├── UseArgument.class
+│   │   │   │   ├── UseArgument.java
+│   │   │   │   ├── UseThree.class
+│   │   │   │   └── UseThree.java
+│   │   │   ├── Exercises
+│   │   │   │   ├── Exercise1.1.2.md
+│   │   │   │   ├── Exercise1.1.3.md
+│   │   │   │   ├── Exercise1.1.4.md
+│   │   │   │   ├── Exercise1.1.5.md
+│   │   │   │   ├── HelloTen.class
+│   │   │   │   └── HelloTen.java
+│   │   │   └── Notes
+│   │   │       └── YourFirstProgramNotes.md
+│   │   ├── 1.2_Built-in_Types_of_Data
+│   │   │   ├── Code
+│   │   │   │   ├── IntOps.class
+│   │   │   │   ├── IntOps.java
+│   │   │   │   ├── LeapYear.class
+│   │   │   │   ├── LeapYear.java
+│   │   │   │   ├── Quadratic.class
+│   │   │   │   ├── Quadratic.java
+│   │   │   │   ├── RandomInt.class
+│   │   │   │   ├── RandomInt.java
+│   │   │   │   ├── Ruler.class
+│   │   │   │   └── Ruler.java
+│   │   │   ├── Exercises
+│   │   │   │   ├── Exercise1.2.1.md
+│   │   │   │   ├── Exercise1.2.12.md
+│   │   │   │   ├── Exercise1.2.3.md
+│   │   │   │   ├── Exercise1.2.4.md
+│   │   │   │   ├── Exercise1.2.5.md
+│   │   │   │   ├── Exercise1.2.6.md
+│   │   │   │   ├── Exercise1.2.8.md
+│   │   │   │   ├── oneTwoEleven.class
+│   │   │   │   ├── oneTwoEleven.java
+│   │   │   │   ├── oneTwoFifteen.class
+│   │   │   │   ├── oneTwoFifteen.java
+│   │   │   │   ├── oneTwoFourteen.class
+│   │   │   │   ├── oneTwoFourteen.java
+│   │   │   │   ├── oneTwoNine.class
+│   │   │   │   ├── oneTwoNine.java
+│   │   │   │   ├── oneTwoSeven.class
+│   │   │   │   ├── oneTwoSeven.java
+│   │   │   │   ├── oneTwoSixteen.class
+│   │   │   │   ├── oneTwoSixteen.java
+│   │   │   │   ├── oneTwoTen.class
+│   │   │   │   ├── oneTwoTen.java
+│   │   │   │   ├── oneTwoThirteen.class
+│   │   │   │   ├── oneTwoThirteen.java
+│   │   │   │   ├── pythagoreanIdentity.class
+│   │   │   │   ├── pythagoreanIdentity.java
+│   │   │   │   ├── tiny.class
+│   │   │   │   └── tiny.java
+│   │   │   └── Notes
+│   │   │       └── Built-in_Types_of_Data_Notes
+│   │   ├── 1.3_Conditionals_and_Loops
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 1.4_Arrays
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 1.5_Input_and_Output
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   └── 1.6_Case_Study_PageRank
+│   │       ├── Code
+│   │       ├── Exercises
+│   │       └── Notes
+│   ├── 02_Functions
+│   │   ├── 02_Functions.md
+│   │   ├── 2.1_Static_Methods
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 2.2_Libraries_and_Clients
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 2.3_Recursion
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   └── 2.4_Case_Study_Perceptron
+│   │       ├── Code
+│   │       ├── Exercises
+│   │       └── Notes
+│   ├── 03_OOP
+│   │   ├── 03_OOP.md
+│   │   ├── 3.1_Using_Data_Types
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 3.2_Creating_Data_Types
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 3.3_Designing_Data_Types
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   └── 3.4_Case_Study_N-Body
+│   │       ├── Code
+│   │       ├── Exercises
+│   │       └── Notes
+│   ├── 04_Data_Structures
+│   │   ├── 04_Data_Structures.md
+│   │   ├── 4.1_Performance
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 4.2_Sorting_and_Searching
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 4.3_Stacks_and_Queues
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 4.4_Symbol_Tables
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   └── 4.5_Case_Study_Small_World
+│   │       ├── Code
+│   │       ├── Exercises
+│   │       └── Notes
+│   ├── 05_Theory_of_Computing
+│   │   ├── 05_Theory_of_Computing.md
+│   │   ├── 5.1_Formal_Languages
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 5.2_Turing_Machines
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 5.3_Universality
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 5.4_Computability
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 5.5_Intractability
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   └── 5.6_Cryptography
+│   │       ├── Code
+│   │       ├── Exercises
+│   │       └── Notes
+│   ├── 06_A_Computing_Machine
+│   │   ├── 06_A_Computing_Machine.md
+│   │   ├── 6.1_Representing_Info
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 6.2_TOY_Machine
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 6.3_TOY_Programming
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   └── 6.4_TOY_Virtual_Machine
+│   │       ├── Code
+│   │       ├── Exercises
+│   │       └── Notes
+│   ├── 07_Building_a_Computer
+│   │   ├── 07_Building_a_Computer.md
+│   │   ├── 7.1_Boolean_Logic
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 7.2_Basic_Circuit_Model
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 7.3_Combinational_Circuits
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 7.4_Sequential_Circuits
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   └── 7.5_Digital_Devices
+│   │       ├── Code
+│   │       ├── Exercises
+│   │       └── Notes
+│   ├── 08_Systems
+│   │   ├── 08_Systems.md
+│   │   ├── 8.1_Library_Programming
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 8.2_Compilers
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 8.3_Operating_Systems
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   ├── 8.4_Networking
+│   │   │   ├── Code
+│   │   │   ├── Exercises
+│   │   │   └── Notes
+│   │   └── 8.5_Applications_Systems
+│   │       ├── Code
+│   │       ├── Exercises
+│   │       └── Notes
+│   └── 09_Scientific_Computation
+│       ├── 09_Scientific_Computation.md
+│       ├── 9.1_Floating_Point
+│       │   ├── Code
+│       │   ├── Exercises
+│       │   └── Notes
+│       ├── 9.2_Symbolic_Methods
+│       │   ├── Code
+│       │   ├── Exercises
+│       │   └── Notes
+│       ├── 9.3_Numerical_Integration
+│       │   ├── Code
+│       │   ├── Exercises
+│       │   └── Notes
+│       ├── 9.4_Differential_Equations
+│       │   ├── Code
+│       │   ├── Exercises
+│       │   └── Notes
+│       ├── 9.5_Linear_Algebra
+│       │   ├── Code
+│       │   ├── Exercises
+│       │   └── Notes
+│       ├── 9.6_Optimization
+│       │   ├── Code
+│       │   ├── Exercises
+│       │   └── Notes
+│       ├── 9.7_Data_Analysis
+│       │   ├── Code
+│       │   ├── Exercises
+│       │   └── Notes
+│       └── 9.8_Simulation
+│           ├── Code
+│           ├── Exercises
+│           └── Notes
+├── Programming in Python
+│   ├── PKG-INFO
+│   ├── README
+│   ├── build
+│   │   └── lib
+│   │       ├── color.py
+│   │       ├── instream.py
+│   │       ├── outstream.py
+│   │       ├── picture.py
+│   │       ├── stdarray.py
+│   │       ├── stdaudio.py
+│   │       ├── stddraw.py
+│   │       ├── stdio.py
+│   │       ├── stdrandom.py
+│   │       └── stdstats.py
+│   ├── chapter1
+│   │   ├── exercises-1.1
+│   │   │   ├── exercises-1.1.txt
+│   │   │   ├── helloworld.py
+│   │   │   ├── tenHelloWorld.py
+│   │   │   ├── useargument.py
+│   │   │   └── usethree.py
+│   │   └── exercises-1.2
+│   │       ├── colorConvert.py
+│   │       ├── compoundInterest.py
+│   │       ├── dayOfWeek.py
+│   │       ├── displacement.py
+│   │       ├── dragonCurves.py
+│   │       ├── evenDivide.py
+│   │       ├── exercises-1.2.txt
+│   │       ├── floatops.py
+│   │       ├── gaussRand.py
+│   │       ├── greatCircle.py
+│   │       ├── intops.py
+│   │       ├── isLeapYear.py
+│   │       ├── isTriangle.py
+│   │       ├── marchJune.py
+│   │       ├── mercator.py
+│   │       ├── moreStatements.py
+│   │       ├── notAandB.py
+│   │       ├── orderCheck.py
+│   │       ├── polarCoordinates.py
+│   │       ├── quadratic.py
+│   │       ├── randomAandB.py
+│   │       ├── randomInt.py
+│   │       ├── ruler.py
+│   │       ├── sin2t.py
+│   │       ├── statements.py
+│   │       ├── thetaOne.py
+│   │       ├── threeSort.py
+│   │       ├── uniformRand.py
+│   │       └── windchill.py
+│   ├── color.py
+│   ├── exercises.txt
+│   ├── instream.py
+│   ├── introcs.egg-info
+│   │   ├── PKG-INFO
+│   │   ├── SOURCES.txt
+│   │   ├── dependency_links.txt
+│   │   └── top_level.txt
+│   ├── outstream.py
+│   ├── picture.py
+│   ├── setup.cfg
+│   ├── setup.py
+│   ├── stdarray.py
+│   ├── stdaudio.py
+│   ├── stddraw.py
+│   ├── stdio.py
+│   ├── stdrandom.py
+│   └── stdstats.py
+├── README.md
+├── SICP
+│   ├── Chapter-1-Building-Abstractions-with-Procedures
+│   │   ├── 1.1-The-Elements-of-Programming
+│   │   │   ├── 1.1.1-Expressions
+│   │   │   │   ├── Code
+│   │   │   │   │   └── expressions.scm
+│   │   │   │   ├── Exercises
+│   │   │   │   └── Notes
+│   │   │   │       └── test.md
+│   │   │   ├── 1.1.2-Naming-and-the-Environment
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 1.1.3-Evaluating-Combinations
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   │       └── notes.scm
+│   │   │   ├── 1.1.4-Compound-Procedures
+│   │   │   │   ├── Code
+│   │   │   │   │   └── compoundProcedures.scm
+│   │   │   │   └── Exercises
+│   │   │   ├── 1.1.5-The-Substitution-Model-for-Procedure-Application
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   │       ├── code.scm
+│   │   │   │       └── notes.md
+│   │   │   ├── 1.1.6-Conditional-Expressions-and-Predicates
+│   │   │   │   ├── Exercise1.1.scm
+│   │   │   │   ├── Exercise1.2.scm
+│   │   │   │   ├── Exercise1.3.scm
+│   │   │   │   ├── Exercise1.4.scm
+│   │   │   │   ├── Exercise1.5.scm
+│   │   │   │   ├── code.scm
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 1.1.7-Example-Square-Roots-by-Newtons-Method
+│   │   │   │   ├── exercise1.6.scm
+│   │   │   │   ├── exercise1.7.scm
+│   │   │   │   ├── exercise1.8.scm
+│   │   │   │   ├── newton.scm
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   │       └── newton-trace.md
+│   │   │   └── 1.1.8-Procedures-as-Black-Box-Abstractions
+│   │   │       ├── extra.scm
+│   │   │       └── {code,exercises,notes}
+│   │   ├── 1.2-Procedures-and-the-Processes-They-Generate
+│   │   │   ├── 1.2.1-Linear-Recursion-and-Iteration
+│   │   │   │   ├── Exercise1.9.scm
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 1.2.2-Tree-Recursion
+│   │   │   │   ├── TCO-notes.md
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   │       ├── exercise1.10.scm
+│   │   │   │       ├── exercise1.11.scm
+│   │   │   │       ├── exercise1.12.scm
+│   │   │   │       ├── exercise1.13.scm
+│   │   │   │       └── order-of-growth-notes.scm
+│   │   │   ├── 1.2.3-Orders-of-Growth
+│   │   │   │   ├── Exercise1.14.md
+│   │   │   │   ├── let.scm
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   │       └── Exercise1.15.md
+│   │   │   ├── 1.2.4-Exponentiation
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 1.2.5-Greatest-Common-Divisors
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   └── 1.2.6-Example-Testing-for-Primality
+│   │   │       └── {code,exercises,notes}
+│   │   └── 1.3-Formulating-Abstractions-with-Higher-Order-Procedures
+│   │       ├── 1.3.1-Procedures-as-Arguments
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 1.3.2-Constructing-Procedures-Using-Lambda
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 1.3.3-Procedures-as-General-Methods
+│   │       │   └── {code,exercises,notes}
+│   │       └── 1.3.4-Procedures-as-Returned-Values
+│   │           └── {code,exercises,notes}
+│   ├── Chapter-2-Building-Abstractions-with-Data
+│   │   ├── 2.1-Introduction-to-Data-Abstraction
+│   │   │   ├── 2.1.1-Example-Arithmetic-Operations-for-Rational-Numbers
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 2.1.2-Abstraction-Barriers
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 2.1.3-What-Is-Meant-by-Data
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   └── 2.1.4-Extended-Exercise-Interval-Arithmetic
+│   │   │       └── {code,exercises,notes}
+│   │   ├── 2.2-Hierarchical-Data-and-the-Closure-Property
+│   │   │   ├── 2.2.1-Representing-Sequences
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 2.2.2-Hierarchical-Structures
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 2.2.3-Sequences-as-Conventional-Interfaces
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   └── 2.2.4-Example-A-Picture-Language
+│   │   │       └── {code,exercises,notes}
+│   │   ├── 2.3-Symbolic-Data
+│   │   │   ├── 2.3.1-Quotation
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 2.3.2-Example-Symbolic-Differentiation
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 2.3.3-Example-Representing-Sets
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   └── 2.3.4-Example-Huffman-Encoding-Trees
+│   │   │       └── {code,exercises,notes}
+│   │   ├── 2.4-Multiple-Representations-for-Abstract-Data
+│   │   │   ├── 2.4.1-Representations-for-Complex-Numbers
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 2.4.2-Tagged-Data
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   └── 2.4.3-Data-Directed-Programming-and-Additivity
+│   │   │       └── {code,exercises,notes}
+│   │   └── 2.5-Systems-with-Generic-Operations
+│   │       ├── 2.5.1-Generic-Arithmetic-Operations
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 2.5.2-Combining-Data-of-Different-Types
+│   │       │   └── {code,exercises,notes}
+│   │       └── 2.5.3-Example-Symbolic-Algebra
+│   │           └── {code,exercises,notes}
+│   ├── Chapter-3-Modularity-Objects-and-State
+│   │   ├── 3.1-Assignment-and-Local-State
+│   │   │   ├── 3.1.1-Local-State-Variables
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 3.1.2-The-Benefits-of-Introducing-Assignment
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   └── 3.1.3-The-Costs-of-Introducing-Assignment
+│   │   │       └── {code,exercises,notes}
+│   │   ├── 3.2-The-Environment-Model-of-Evaluation
+│   │   │   ├── 3.2.1-The-Rules-for-Evaluation
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 3.2.2-Applying-Simple-Procedures
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 3.2.3-Frames-as-the-Repository-of-Local-State
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   └── 3.2.4-Internal-Definitions
+│   │   │       └── {code,exercises,notes}
+│   │   ├── 3.3-Modeling-with-Mutable-Data
+│   │   │   ├── 3.3.1-Mutable-List-Structure
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 3.3.2-Representing-Queues
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 3.3.3-Representing-Tables
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 3.3.4-A-Simulator-for-Digital-Circuits
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   └── 3.3.5-Propagation-of-Constraints
+│   │   │       └── {code,exercises,notes}
+│   │   ├── 3.4-Concurrency-Time-Is-of-the-Essence
+│   │   │   ├── 3.4.1-The-Nature-of-Time-in-Concurrent-Systems
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   └── 3.4.2-Mechanisms-for-Controlling-Concurrency
+│   │   │       └── {code,exercises,notes}
+│   │   └── 3.5-Streams
+│   │       ├── 3.5.1-Streams-Are-Delayed-Lists
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 3.5.2-Infinite-Streams
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 3.5.3-Exploiting-the-Stream-Paradigm
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 3.5.4-Streams-and-Delayed-Evaluation
+│   │       │   └── {code,exercises,notes}
+│   │       └── 3.5.5-Modularity-of-Functional-Programs-and-Modularity-of-Objects
+│   │           └── {code,exercises,notes}
+│   ├── Chapter-4-Metalinguistic-Abstraction
+│   │   ├── 4.1-The-Metacircular-Evaluator
+│   │   │   ├── 4.1.1-The-Core-of-the-Evaluator
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 4.1.2-Representing-Expressions
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 4.1.3-Evaluator-Data-Structures
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 4.1.4-Running-the-Evaluator-as-a-Program
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 4.1.5-Data-as-Programs
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 4.1.6-Internal-Definitions
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   └── 4.1.7-Separating-Syntactic-Analysis-from-Execution
+│   │   │       └── {code,exercises,notes}
+│   │   ├── 4.2-Variations-on-a-Scheme-Lazy-Evaluation
+│   │   │   ├── 4.2.1-Normal-Order-and-Applicative-Order
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 4.2.2-An-Interpreter-with-Lazy-Evaluation
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   └── 4.2.3-Streams-as-Lazy-Lists
+│   │   │       └── {code,exercises,notes}
+│   │   ├── 4.3-Variations-on-a-Scheme-Nondeterministic-Computing
+│   │   │   ├── 4.3.1-Amb-and-Search
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   ├── 4.3.2-Examples-of-Nondeterministic-Programs
+│   │   │   │   └── {code,exercises,notes}
+│   │   │   └── 4.3.3-Implementing-the-Amb-Evaluator
+│   │   │       └── {code,exercises,notes}
+│   │   └── 4.4-Logic-Programming
+│   │       ├── 4.4.1-Deductive-Information-Retrieval
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 4.4.2-How-the-Query-System-Works
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 4.4.3-Is-Logic-Programming-Mathematical-Logic
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 4.4.4-Implementing-the-Query-System
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 4.4.4.1-The-Driver-Loop-and-Instantiation
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 4.4.4.2-The-Evaluator
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 4.4.4.3-Finding-Assertions-by-Pattern-Matching
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 4.4.4.4-Rules-and-Unification
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 4.4.4.5-Maintaining-the-Data-Base
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 4.4.4.6-Stream-Operations
+│   │       │   └── {code,exercises,notes}
+│   │       ├── 4.4.4.7-Query-Syntax-Procedures
+│   │       │   └── {code,exercises,notes}
+│   │       └── 4.4.4.8-Frames-and-Bindings
+│   │           └── {code,exercises,notes}
+│   └── Chapter-5-Computing-with-Register-Machines
+│       ├── 5.1-Designing-Register-Machines
+│       │   ├── 5.1.1-A-Language-for-Describing-Register-Machines
+│       │   │   └── {code,exercises,notes}
+│       │   ├── 5.1.2-Abstraction-in-Machine-Design
+│       │   │   └── {code,exercises,notes}
+│       │   ├── 5.1.3-Subroutines
+│       │   │   └── {code,exercises,notes}
+│       │   ├── 5.1.4-Using-a-Stack-to-Implement-Recursion
+│       │   │   └── {code,exercises,notes}
+│       │   └── 5.1.5-Instruction-Summary
+│       │       └── {code,exercises,notes}
+│       ├── 5.2-A-Register-Machine-Simulator
+│       │   ├── 5.2.1-The-Machine-Model
+│       │   │   └── {code,exercises,notes}
+│       │   ├── 5.2.2-The-Assembler
+│       │   │   └── {code,exercises,notes}
+│       │   ├── 5.2.3-Generating-Execution-Procedures-for-Instructions
+│       │   │   └── {code,exercises,notes}
+│       │   └── 5.2.4-Monitoring-Machine-Performance
+│       │       └── {code,exercises,notes}
+│       ├── 5.3-Storage-Allocation-and-Garbage-Collection
+│       │   ├── 5.3.1-Memory-as-Vectors
+│       │   │   └── {code,exercises,notes}
+│       │   └── 5.3.2-Maintaining-the-Illusion-of-Infinite-Memory
+│       │       └── {code,exercises,notes}
+│       ├── 5.4-The-Explicit-Control-Evaluator
+│       │   ├── 5.4.1-The-Core-of-the-Explicit-Control-Evaluator
+│       │   │   └── {code,exercises,notes}
+│       │   ├── 5.4.2-Sequence-Evaluation-and-Tail-Recursion
+│       │   │   └── {code,exercises,notes}
+│       │   ├── 5.4.3-Conditionals-Assignments-and-Definitions
+│       │   │   └── {code,exercises,notes}
+│       │   └── 5.4.4-Running-the-Evaluator
+│       │       └── {code,exercises,notes}
+│       └── 5.5-Compilation
+│           ├── 5.5.1-Structure-of-the-Compiler
+│           │   └── {code,exercises,notes}
+│           ├── 5.5.2-Compiling-Expressions
+│           │   └── {code,exercises,notes}
+│           ├── 5.5.3-Compiling-Combinations
+│           │   └── {code,exercises,notes}
+│           ├── 5.5.4-Combining-Instruction-Sequences
+│           │   └── {code,exercises,notes}
+│           ├── 5.5.5-An-Example-of-Compiled-Code
+│           │   └── {code,exercises,notes}
+│           ├── 5.5.6-Lexical-Addressing
+│           │   └── {code,exercises,notes}
+│           └── 5.5.7-Interfacing-Compiled-Code-to-the-Evaluator
+│               └── {code,exercises,notes}
+├── create_sicp_structure.sh
+└── structure.txt
+
+458 directories, 227 files
