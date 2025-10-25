@@ -32,3 +32,41 @@
   (if (< n 3)
       n
       (+ (f (- n 1)) (* 2 (f (- n 2))) (* 3 (f (- n 3))))))
+
+
+;; Recursive version:
+
+(define (f n)
+  (if (< n 3)
+      n
+      (+ (f (- n 1)) (* 2 (f (- n 2))) (* 3 (f (- n 3))))))
+
+
+((f 3)
+(+ (* 1 2)(* 2 1)(* 3 0)))
+
+;; Iterative version:
+;;
+;; What are the state variables we need?
+;; It could be the three versions of the function:
+;;   a = (* 1 (f (- n 1)))
+;;   b = (* 2 (f (- n 2)))
+;;   c = (* 3 (f (- n 3)))
+;; f = (+ a b c)
+;;
+;; So how do we write it as an f-iter?
+
+(define (f n)
+  (f-iter 2 1 0 n))
+
+(define (f-iter a b c count)
+  (if (< count 1)
+      c
+      (f-iter (+ a 
+                 (* 2 b) 
+                 (* 3 c)) 
+              a 
+              b 
+              (- count 1))))
+
+;; Works for all test cases.
