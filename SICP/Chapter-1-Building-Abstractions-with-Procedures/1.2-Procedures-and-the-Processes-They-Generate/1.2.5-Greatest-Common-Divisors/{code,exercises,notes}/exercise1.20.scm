@@ -128,7 +128,7 @@
 → (if (= 40 0) 206 (2))
 → 2 ;; if evalutes to 2
 
-;; Remainder is called 4 times, because it is never called during the final if statement.
+;; Remainder is called 18 times.
 
 ;; -----------------------------------------------------------------------------
 ;; Applicative Order
@@ -160,4 +160,4 @@
 → (if (= 40 0) 206 (2))
 → 2 ;; if evalutes to 2
 
-;; Remainder is likewise called 4 times, because it is never called during the final if statement.
+;; Remainder is called 4 times, because it is never called during the final if statement.
