@@ -111,6 +111,6 @@ Fib(n) = (phi^n - psi^n) / sqrt(5)
 ;;
 ;; Q.E.D.
 ;;
-;; For this problem I worked iteratively with ChatGPT to teach me
+;; For this problem I worked iteratively with llms to teach me
 ;; how to do induction, the mathematical properties of recurrence,
 ;; and to format the final proof.

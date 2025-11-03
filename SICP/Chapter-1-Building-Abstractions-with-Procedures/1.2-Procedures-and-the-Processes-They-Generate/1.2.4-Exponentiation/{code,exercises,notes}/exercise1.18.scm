@@ -32,3 +32,19 @@
 (define (halve x)
   (/ x 2))
 
+;; Now with some better lexical scoping.
+
+(define (peasant x y)
+  (define (even? n)
+    (= (remainder n 2) 0))
+  (define (double n)
+    (+ n n))
+  (define (halve n)
+    (quotient n 2))
+  (define (iter x y a)
+    (cond ((= y 0) a)
+          ((even? y)
+           (iter (double x) (halve y) a))
+          (else
+           (iter x (- y 1) (+ x a)))))
+  (iter x y 0))

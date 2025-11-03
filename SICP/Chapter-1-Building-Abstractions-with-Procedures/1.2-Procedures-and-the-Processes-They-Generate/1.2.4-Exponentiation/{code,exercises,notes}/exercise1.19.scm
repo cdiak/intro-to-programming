@@ -36,37 +36,28 @@
 
 ;; ## Algebraic Derivation Transcript
 
-;; We apply the transformation \(T_{pq}\) twice, starting from:
-
-;; $$
-;; a_1 = bq + aq + ap \\
-;; b_1 = bp + aq
-;; $$
-
-;; We then compute \(a_2\) and \(b_2\) as:
-
-;; $$
-;; a_2 = (bp + aq)q + (bq + aq + ap)q + (bq + aq + ap)p \\
-;; b_2 = (bp + aq)p + (bq + aq + ap)q
-;; $$
-
-;; Expanding terms:
-
-;; $$
-;; a_2 = bpq + aqq + bqq + aqq + apq + bqp + a qp + app \\
-;;     = aq^2 + aq^2 + bq^2 + bpq + bpq + apq+ap q+ap p^2\\
- ;;    = q^2(2a+b)+pq(  2a+  2b)+ap ^  2$$
-
- ;; $$b _{   }=bp ^{   }+aq q+b q+a q+a pq \\= q(a+b)+p( )+bp ^{   }
- 
- ;; ## Derivation Summary
- 
- ;; Starting from the recursive structure of \(T_{pq}\), we applied it symbolically twice, obtaining expressions for \(a_2\) and \(b_2\). By comparing these expressions to the standard transformation form, we isolated the coefficients of \(a\) and \(b\) to solve for \(p'\) and \(q'\).
-
- ;; ### Final Derived Formulas
- 
- ;; $$
- ;; \begin{align*}
- ;; q' &= q^2+  pq\\
- ;; p' &= p^{}+  
-```
+;; Apply the transformation T_pq once:
+;;   a1 = b*q + a*q + a*p
+;;   b1 = b*p + a*q
+;;
+;; Apply it a second time to (a1, b1):
+;;   a2 = b1*q + a1*q + a1*p
+;;   b2 = b1*p + a1*q
+;;
+;; Substitute for a1 and b1:
+;;   a2 = (b*p + a*q)*q + (b*q + a*q + a*p)*q + (b*q + a*q + a*p)*p
+;;   b2 = (b*p + a*q)*p + (b*q + a*q + a*p)*q
+;;
+;; Expand and collect terms:
+;;   a2 = a*(p*p + 2*p*q + 2*q*q) + b*(p*q + q*q)
+;;   b2 = a*(p*q + q*q)           + b*(p*p + q*q)
+;;
+;; By comparison with the transformation form:
+;;   a2 = a*p' + b*q'
+;;   b2 = a*q' + b*p
+;;
+;; We can read off:
+;;   p' = p² + q²
+;;   q' = 2*p*q + q²
+;;
+;; Using this method, computing Fib(n) requires only O(log n) steps.
